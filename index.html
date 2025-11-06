@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Club Forestier — Hôtel & Club | Agadir</title>
+  <style>
+    :root {
+      --blue-50:#f2fbff;
+      --blue-100:#e6f7ff;
+      --blue-400:#3aa7e0;
+      --blue-600:#0b78b1;
+      --muted:#6b7785;
+    }
+    * { box-sizing:border-box; }
+    body {
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+      margin:0;
+      background:var(--blue-50);
+      color:#072233;
+    }
+    .container { max-width:1100px; margin:0 auto; padding:20px; }
+    header {
+      background:linear-gradient(180deg,var(--blue-100),white);
+      padding:22px 0;
+      position:sticky; top:0; z-index:30;
+      border-bottom:1px solid rgba(11,120,177,0.06);
+    }
+    nav { display:flex; align-items:center; justify-content:space-between; }
+    .brand { display:flex; gap:12px; align-items:center; }
+    .logo {
+      width:56px; height:56px; border-radius:10px;
+      background:linear-gradient(135deg,var(--blue-400),var(--blue-600));
+      display:flex; align-items:center; justify-content:center;
+      color:white; font-weight:700;
+    }
+    .brand h1 { font-size:18px; margin:0; }
+    .navlinks a {
+      margin-left:16px; text-decoration:none; color:var(--muted); font-weight:600;
+    }
+    .hero { display:grid; grid-template-columns:1fr 360px; gap:20px; margin-top:18px; }
+    .card {
+      background:white; border-radius:14px; box-shadow:0 8px 28px rgba(11,120,177,0.06);
+      overflow:hidden; padding:18px;
+    }
+    .lead { color:#234f62; margin:6px 0 12px; }
+    .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:8px; margin-top:12px; }
+    .gallery img { width:100%; height:200px; object-fit:cover; border-radius:8px; }
+    .activities { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:12px; margin-top:12px; }
+    .activity { background:linear-gradient(180deg,white, #f7fcff); padding:12px; border-radius:10px; border:1px solid rgba(4,47,64,0.03); }
+    .activity h4 { margin:0 0 6px; font-size:15px; color:var(--blue-600); }
+    .btn {
+      display:inline-block; padding:10px 14px; border-radius:10px;
+      background:var(--blue-600); color:white; text-decoration:none; font-weight:700;
+    }
+    .btn-ghost {
+      background:transparent; border:1px solid var(--blue-600); color:var(--blue-600);
+    }
+    footer { padding:18px; text-align:center; color:var(--muted); margin-top:22px; }
+    form { display:grid; gap:10px; }
+    input, textarea { padding:10px; border-radius:8px; border:1px solid #e7f2fa; }
+    textarea { min-height:110px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <div class="logo">CF</div>
+          <div>
+            <h1>Club Forestier — Agadir</h1>
+            <div style="font-size:13px;color:var(--muted)">Piscine • Sports • Restauration</div>
+          </div>
+        </div>
+        <div class="navlinks">
+          <a href="#activities">Activités</a>
+          <a href="#gallery">Galerie</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Bienvenue au Club Forestier</h2>
+      <p class="lead">Un lieu de détente à Agadir — piscine, terrains de sport, restaurant et espaces verts. Parfait pour les familles, les sportifs et les événements.</p>
+
+      <h3 id="activities">Ce que nous proposons</h3>
+      <div class="activities">
+        <div class="activity"><h4>Piscine & Solarium</h4><p>Grand bassin extérieur, chaises longues et espace baignade pour petits et grands.</p></div>
+        <div class="activity"><h4>Restaurant & Terrasse</h4><p>Petit déjeuner, déjeuners et dîners en terrasse — spécialités locales & boissons fraîches.</p></div>
+        <div class="activity"><h4>Terrains de sport</h4><p>Tennis, football et beach-volley sur surfaces dédiées — éclairage pour sessions nocturnes.</p></div>
+        <div class="activity"><h4>Spa & Bien-être</h4><p>Massages, sauna et zones de relaxation pour une pause complète.</p></div>
+        <div class="activity"><h4>Événements & Privatisations</h4><p>Anniversaires, team‑building et réceptions sur réservation.</p></div>
+        <div class="activity"><h4>Activités familiales</h4><p>Aire de jeux et animations pour enfants selon saison.</p></div>
+      </div>
+
+      <h3 id="gallery">Galerie</h3>
+      <div class="gallery">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzAX8a8cz5VUbflo0mt5RtDNUaTs0-bYLrfPdGY79wsGHbR2ZumUdqOCzopxW1jqeP8ERi54JDg44POlc93CF7-ut3BeZ2eWvbawhNsnoIRVeLclaKTcvnLKZGU0wulwa037t3cNA=s2560-w2560-h1264-rw" alt="Entrée principale">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxYwj4EVENHeCiOzbOdA-XtAg8Mv0hGVl35ahfQfhXf9hq_LKRPHECGwg&s=10" alt="Terrain de tennis">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwSEl64m2ePSVGQqFbt5GOkfyRd7B3qpeO2aej1qyxYLgh9qXtpT1fqPWjhj-r_64eCcoAJAwAG5IG8_w3oYVDAMtPnYIc32Q1A8z1zy_7OFV718vmeEwoRtKsEguckXoEcWVkS=s2560-w2560-h1264-rw" alt="Terrasse de nuit">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzFo-f48_T-3fk00FFb7qc007jTW0Sxq8jCyuv5lEOzr2l4TCuKyvc0mxROdpuMg2OjOByBfbsZnETPQN_Ld_Ue7NZFCxN_KYgWf_bEwnblABSr5gkuGyjCu6oEswEr2tjA_MNy=w367-h306-n-k-no-nu" alt="Nature">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyNJQ5d91yb7xv_AFju6yrfrmP1VSPKJQ2SKnvv8QEtWgdkxjgCRXBfhf7u9RWZOyTD6usOjmwivFFca9BfNnHUqm2RC-aD7o_CnkBfjv8V1LGdBXK55knPzqmHXOeOfcToEmNKog=s2560-w2560-h1264-rw" alt="Piscine & solarium">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzO8n8OeH5Af1CjqRv6U0e2aonkjZbmnc5dj1tbxHN1lmIcFNXZJ9AU6xWRyQbqGpa59UXGPCB89-Q17mFrIQH5gRDrlse9RhhyqwWr0bSCDNDi964i2IzBmOEjN3JcFUVJPA0u=s2560-w2560-h1264-rw" alt="Restaurant">
+      </div>
+
+      <h3 id="contact">Contact & Réservations</h3>
+      <p><strong>Téléphone :</strong> <a href="tel:0707-866868">0707-866868</a></p>
+      <p><strong>Facebook :</strong> <a href="https://www.facebook.com/FOSEFAgadir/?locale=fr_FR" target="_blank">Page Facebook</a></p>
+      <p><strong>WhatsApp :</strong> <a class="btn" href="https://wa.me/0707866868" target="_blank">Réserver via WhatsApp</a></p>
+      <p><strong>Horaires :</strong> Mar–Dim : 09:00 — 22:30</p>
+      <p><strong>Localisation :</strong> <a href="https://www.google.com/maps/place/CLUB+FORESTIER+AGADIR/" target="_blank">Inezgane, Agadir</a></p>
+
+      <hr>
+      <h4>Réserver / Contact rapide</h4>
+      <form>
+        <input type="text" placeholder="Ton nom" required>
+        <input type="email" placeholder="Ton e‑mail" required>
+        <textarea placeholder="Message / demande" required></textarea>
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © Club Forestier — Créé par Ibrahim Tigguint • Téléphone : <a href="tel:0707-866868">0707-866868</a>
+    </div>
+  </footer>
+</body>
+</html>
